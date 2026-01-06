@@ -3,8 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        UBUNTU_CODENAME_BUILD: noble
     image: zerotier:latest
     container_name: zerotier
     network_mode: host
